@@ -1,12 +1,25 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { TextInput, StyleSheet, TextInputProps } from 'react-native';
 
-const InputField = () => {
+export default function InputField(props: TextInputProps) {
   return (
-    <View>
-      <Text>InputField</Text>
-    </View>
-  )
+    <TextInput
+      style={styles.input}
+      placeholderTextColor="#BDBDBD"
+      {...props}
+    />
+  );
 }
 
-export default InputField
+const styles = StyleSheet.create({
+  input: {
+    width: '100%',
+    backgroundColor: '#fff',
+    borderRadius: 24,
+    paddingHorizontal: 20,
+    paddingVertical: 14,
+    fontSize: 13,
+    color: '#222',
+    fontFamily: 'Poppins-Regular',
+    marginBottom: 16,
+  },
+});
