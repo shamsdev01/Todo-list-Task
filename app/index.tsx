@@ -11,7 +11,7 @@ export default function HomeScreen() {
       <TopLeftDesign />
       <View style={styles.content}>
         <Image
-          source={require('../assets/images/back-to-school.png')}
+          source={require('../assets/images/to-do.png')}
           accessibilityLabel="Back to school"
           style={styles.image}
           resizeMode="contain"

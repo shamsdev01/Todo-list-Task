@@ -13,7 +13,7 @@ export default function SignIn() {
       <View style={styles.content}>
         <Text style={styles.title}>Welcome back</Text>
         <Image
-          source={require('../assets/images/to-do.png')}
+          source={require('../assets/images/back-to-school.png')}
           style={styles.image}
           resizeMode="contain"
         />
@@ -30,7 +30,7 @@ export default function SignIn() {
         <TouchableOpacity style={styles.forgotContainer}>
           <Text style={styles.forgot}>Forget password ?</Text>
         </TouchableOpacity>
-        <Button title="Login" onPress={() => {}} />
+        <Button title="Login" onPress={() => router.push('/dashboard')} />
         <View style={styles.footer}>
           <Text style={styles.footerText}>Don't have an account ? </Text>
           <TouchableOpacity onPress={() => router.push('/onboard')}>
@@ -51,6 +51,7 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
+    zIndex: 11,
     justifyContent: 'center',
     alignItems: 'center',
     marginHorizontal: 24,
